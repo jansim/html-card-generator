@@ -20,7 +20,7 @@ let options = {
 
 console.log("Options:", options)
 
-pdf.create(html, options).toFile('./out.pdf', function(err, res) {
+pdf.create(html, options).toFile('./dist/out.pdf', function(err, res) {
   if (err) return console.log(err)
   console.log(res)
 })
