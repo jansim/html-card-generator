@@ -1,0 +1,16 @@
+{
+  "name": "card-generator",
+  "version": "1.0.0",
+  "description": "A tool to generate playing cards.",
+  "main": "index.mjs",
+  "author": "Jan Simson <jan.simson@gmx.de>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "node ."
+  },
+  "dependencies": {
+    "handlebars": "^4.0.12",
+    "html-pdf": "^2.2.0"
+  }
+}
