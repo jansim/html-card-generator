@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+/pdf
 
 # local env files
 .env.local
