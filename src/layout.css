@@ -136,7 +136,7 @@ html, body {
 /* Footer line */
 .foot {
   position: absolute;
-  bottom: 0;
+  bottom: 1mm;
 
   width: 100%;
 
