@@ -1,13 +1,17 @@
 {
-  "type": "Type",
-  "icon": "game-icons/delapouite/all-seeing-eye.svg",
-  "name": "Lorem ipsum!",
-  "text": "Lorem ipsum dolor sit amet.",
-  "indicators": {
-    "topLeft": "",
-    "topRight": "",
-    "bottomLeft": "BL",
-    "bottomRight": "BR"
-  },
-  "backIcon": "game-icons/delapouite/spiked-dragon-head.svg"
+  "cards": [
+    {
+      "type": "Type",
+      "icon": "game-icons/delapouite/all-seeing-eye.svg",
+      "name": "Lorem ipsum!",
+      "text": "Lorem ipsum dolor sit amet.",
+      "indicators": {
+        "topLeft": "",
+        "topRight": "",
+        "bottomLeft": "0",
+        "bottomRight": "0"
+      },
+      "backIcon": "game-icons/delapouite/spiked-dragon-head.svg"
+    }
+  ]
 }

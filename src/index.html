@@ -6,63 +6,66 @@
   </head>
 
   <body>
-    <div class="page card">
-      <div class="area-60">
-        <div class="bg" style="box-shadow: 0 0 50px #f12711 inset; background-color: #f5af19;"></div>
-        <div class="bg image" style="background-image: url({{icon}})"> </div>
-      </div>
-
-      <div class="area-40 text-area top-border red-bg">
-        <div class="type">
-          {{type}}
-        </div>
-        <h1> {{name}} </h1>
-        <p>
-          {{text}}
-        </p>
-        <div class="foot">
-          {{#iconNotice icon}} {{/iconNotice}}
-        </div>
-      </div>
-
-      {{#if indicators}}
-        {{#if indicators.topLeft}}
-          <div class="indicator top left">
-            {{indicators.topLeft}}
-          </div>
-        {{/if}}
-        {{#if indicators.topRight}}
-          <div class="indicator top right">
-            {{indicators.topRight}}
-          </div>
-        {{/if}}
-        {{#if indicators.bottomLeft}}
-          <div class="indicator bottom left">
-            {{indicators.bottomLeft}}
-          </div>
-        {{/if}}
-        {{#if indicators.bottomRight}}
-          <div class="indicator bottom right">
-            {{indicators.bottomRight}}
-          </div>
-        {{/if}}
-      {{/if}}
-    </div>
-
-    {{#if backIcon}}
+    {{#each cards}}
       <div class="page card">
-        <div class="bg" style="box-shadow: 0 0 50px #f12711 inset; background-color: #f5af19;"></div>
-        <div class="area-50 bottom-border">
-          <div class="bg image" style="background-image: url({{backIcon}})"> </div>
-        </div>
-        <div class="area-50 bottom-border inverted">
-          <div class="bg image" style="background-image: url({{backIcon}})"> </div>
+        <div class="area-60">
+          <div class="bg" style="box-shadow: 0 0 50px #f12711 inset; background-color: #f5af19;"></div>
+          <div class="bg image" style="background-image: url({{icon}})"> </div>
         </div>
 
-        <div class="foot">
-          {{#iconNotice backIcon}} {{/iconNotice}}
+        <div class="area-40 text-area top-border red-bg">
+          <div class="type">
+            {{type}}
+          </div>
+          <h1> {{name}} </h1>
+          <p>
+            {{text}}
+          </p>
+          <div class="foot">
+            {{#iconNotice icon}} {{/iconNotice}}
+          </div>
         </div>
+
+        {{#if indicators}}
+          {{#if indicators.topLeft}}
+            <div class="indicator top left">
+              {{indicators.topLeft}}
+            </div>
+          {{/if}}
+          {{#if indicators.topRight}}
+            <div class="indicator top right">
+              {{indicators.topRight}}
+            </div>
+          {{/if}}
+          {{#if indicators.bottomLeft}}
+            <div class="indicator bottom left">
+              {{indicators.bottomLeft}}
+            </div>
+          {{/if}}
+          {{#if indicators.bottomRight}}
+            <div class="indicator bottom right">
+              {{indicators.bottomRight}}
+            </div>
+          {{/if}}
+        {{/if}}
       </div>
-    {{/if}}
+
+      {{#if backIcon}}
+        <div class="page card">
+          <div class="bg" style="box-shadow: 0 0 50px #f12711 inset; background-color: #f5af19;"></div>
+          <div class="area-50 bottom-border">
+            <div class="bg image" style="background-image: url({{backIcon}})"> </div>
+          </div>
+          <div class="area-50 bottom-border inverted">
+            <div class="bg image" style="background-image: url({{backIcon}})"> </div>
+          </div>
+
+          <div class="foot">
+            {{#iconNotice backIcon}} {{/iconNotice}}
+          </div>
+        </div>
+      {{/if}}
+
+    {{/each}}
   </body>
 </html>
