@@ -9,7 +9,7 @@
   "scripts": {
     "build": "node .",
     "auto-build": "nodemon .",
-    "serve": "nodemon ./server.js"
+    "serve": "nodemon -e js,css,html,json,svg ./server.js"
   },
   "dependencies": {
     "express": "^4.16.4",
