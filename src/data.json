@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "type": "Type",
+      "type": "Card Type",
       "icon": "game-icons/delapouite/all-seeing-eye.svg",
       "name": "Lorem ipsum!",
       "text": "Lorem ipsum dolor sit amet.",
