@@ -10,8 +10,8 @@
         "topRight": "",
         "bottomLeft": "0",
         "bottomRight": "0"
-      },
-      "backIcon": "game-icons/delapouite/spiked-dragon-head.svg"
+      }
     }
-  ]
+  ],
+  "backIcon": "game-icons/delapouite/spiked-dragon-head.svg"
 }
