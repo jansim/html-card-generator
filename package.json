@@ -7,10 +7,15 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "node ."
+    "build": "node .",
+    "serve": "nodemon ./server.js"
   },
   "dependencies": {
+    "express": "^4.16.4",
     "handlebars": "^4.0.12",
     "html-pdf": "^2.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.5"
   }
 }
