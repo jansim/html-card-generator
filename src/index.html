@@ -19,16 +19,33 @@
         <p>
           {{text}}
         </p>
-        <div class="indicator bottom left">
-          {{bottomLeft}}
-        </div>
-        <div class="indicator bottom right">
-          {{bottomRight}}
-        </div>
         <div class="foot">
           {{#iconNotice icon}} {{/iconNotice}}
         </div>
       </div>
+
+      {{#if indicators}}
+        {{#if indicators.topLeft}}
+          <div class="indicator top left">
+            {{indicators.topLeft}}
+          </div>
+        {{/if}}
+        {{#if indicators.topRight}}
+          <div class="indicator top right">
+            {{indicators.topRight}}
+          </div>
+        {{/if}}
+        {{#if indicators.bottomLeft}}
+          <div class="indicator bottom left">
+            {{indicators.bottomLeft}}
+          </div>
+        {{/if}}
+        {{#if indicators.bottomRight}}
+          <div class="indicator bottom right">
+            {{indicators.bottomRight}}
+          </div>
+        {{/if}}
+      {{/if}}
     </div>
   </body>
 </html>

@@ -85,13 +85,12 @@ html, body {
 
   border: inherit;
   border-width: 1mm;
-  border-radius: 5mm;
 }
 .top {
   top: -1mm;
 }
 .bottom {
-  bottom: 0;
+  bottom: -1mm;
 }
 .left {
   left: -1mm;
@@ -100,18 +99,16 @@ html, body {
   right: -1mm;
 }
 .top.left {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5mm;
 }
 .top.right {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 5mm;
 }
 .bottom.left {
-  border-top-left-radius: 0;
+  border-top-right-radius: 5mm;
 }
 .bottom.right {
-  border-top-right-radius: 0;
+  border-top-left-radius: 5mm;
 }
 
 /* Type Bubble */

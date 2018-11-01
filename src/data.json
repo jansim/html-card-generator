@@ -3,6 +3,10 @@
   "icon": "game-icons/delapouite/spiked-dragon-head.svg",
   "name": "Lorem ipsum!",
   "text": "Lorem ipsum dolor sit amet.",
-  "bottomLeft": "L",
-  "bottomRight": "R"
+  "indicators": {
+    "topLeft": "",
+    "topRight": "",
+    "bottomLeft": "BL",
+    "bottomRight": "BR"
+  }
 }
