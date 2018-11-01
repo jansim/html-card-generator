@@ -1,5 +1,24 @@
 /* This CSS file contains all the layouting and positioning CSS */
 
+/* Page preview size */
+.page {
+  width: 54mm;
+  height: 85mm;
+}
+
+/*
+  Actual styles for PDF when exporting
+  Has to be full-size, since the units do not match the sizes in option.json
+*/
+@media print {
+  .page {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+
 html, body {
   box-sizing: border-box;
   margin: 0;
@@ -19,22 +38,11 @@ html, body {
 
   position: relative;
 
-  width: 60mm;
-  height: 90mm;
   margin: 50px;
 
   background: white;
 
   page-break-after: auto;
-}
-
-/* Actual styles for PDF */
-@media print {
-  .page {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
 }
 
 /* Contents */
