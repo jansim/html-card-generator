@@ -10,7 +10,7 @@
       <div class="page card">
         <div class="area-60">
           <div class="bg yellow-bg"></div>
-          <div class="bg image" style="background-image: url({{icon}})"> </div>
+          <div class="bg image" style="background-image: url({{icon}});{{#if ../iconSize}}background-size: {{iconSize}};{{/if}}"> </div>
         </div>
 
         <div class="area-40 text-area top-border red-bg">
@@ -47,18 +47,18 @@
         {{/if}}
       </div>
 
-      {{#if ../backIcon}}
+      {{#if ../backface}}
         <div class="page card">
           <div class="bg fire-bg"></div>
           <div class="area-50 bottom-border">
-            <div class="bg image" style="background-image: url({{../backIcon}})"> </div>
+            <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
           </div>
           <div class="area-50 bottom-border inverted">
-            <div class="bg image" style="background-image: url({{../backIcon}})"> </div>
+            <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
           </div>
 
           <div class="foot">
-            {{#iconNotice ../backIcon}} {{/iconNotice}}
+            {{#iconNotice ../backface.icon}} {{/iconNotice}}
           </div>
         </div>
       {{/if}}

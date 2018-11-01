@@ -13,5 +13,8 @@
       }
     }
   ],
-  "backIcon": "game-icons/delapouite/spiked-dragon-head.svg"
+  "backface": {
+    "icon": "game-icons/delapouite/spiked-dragon-head.svg",
+    "iconSize": "cover"
+  }
 }
