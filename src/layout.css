@@ -44,18 +44,54 @@ html, body {
   border: 1mm solid #000;
   border-radius: 5mm;
 }
-.upper-area,
-.lower-area {
+[class*="area-"] {
   position: relative;
 
   width: 100%;
 }
-.upper-area {
-  height: 60%;
+.area-10 {
+  height: 10%;
 }
-.lower-area {
+.area-20 {
+  height: 20%;
+}
+.area-30 {
+  height: 30%;
+}
+.area-40 {
   height: 40%;
 }
+.area-50 {
+  height: 50%;
+}
+.area-60 {
+  height: 60%;
+}
+.area-70 {
+  height: 70%;
+}
+.area-80 {
+  height: 80%;
+}
+.area-90 {
+  height: 90%;
+}
+.area-100 {
+  height: 100%;
+}
+
+.inverted {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.bg {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+}
+
 .image {
   height: 100%;
 
@@ -65,10 +101,21 @@ html, body {
 }
 .text-area {
   text-align: center;
+}
+.top-border {
+  box-sizing: border-box;
 
   border: inherit;
   border-right-width: 0;
   border-bottom-width: 0;
+  border-left-width: 0;
+}
+.bottom-border {
+  box-sizing: border-box;
+
+  border: inherit;
+  border-top-width: 0;
+  border-right-width: 0;
   border-left-width: 0;
 }
 

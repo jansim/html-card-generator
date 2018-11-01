@@ -1,6 +1,6 @@
 {
   "type": "Type",
-  "icon": "game-icons/delapouite/spiked-dragon-head.svg",
+  "icon": "game-icons/delapouite/all-seeing-eye.svg",
   "name": "Lorem ipsum!",
   "text": "Lorem ipsum dolor sit amet.",
   "indicators": {
@@ -8,5 +8,6 @@
     "topRight": "",
     "bottomLeft": "BL",
     "bottomRight": "BR"
-  }
+  },
+  "backIcon": "game-icons/delapouite/spiked-dragon-head.svg"
 }
