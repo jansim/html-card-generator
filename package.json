@@ -9,12 +9,14 @@
   "scripts": {
     "build": "node .",
     "auto-build": "nodemon .",
+    "combine": "node ./combine.js",
     "serve": "nodemon -e js,css,html,json,svg ./server.js"
   },
   "dependencies": {
     "express": "^4.16.4",
     "handlebars": "^4.0.12",
-    "html-pdf": "^2.2.0"
+    "html-pdf": "^2.2.0",
+    "hummus": "^1.0.90"
   },
   "devDependencies": {
     "nodemon": "^1.18.5"
