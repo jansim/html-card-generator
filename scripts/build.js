@@ -3,16 +3,16 @@ const pdf = require('html-pdf')
 
 const html = require('./getHtml.js')
 const config = require('./config.js')
-const userOptions = require('./src/options.json')
+const userOptions = require(path.join(config.SRC_DIR, 'options.json'))
 
 let options = {
-  "base": "file:///" + path.join(__dirname, config.TARGET_DIR),
+  "base": "file:///" + config.SRC_DIR,
   ...userOptions
 }
 
 console.log("Options:", options)
 
-pdf.create(html, options).toFile('./dist/out.pdf', function(err, res) {
+pdf.create(html, options).toFile(config.DIST_PDF, function(err, res) {
   if (err) return console.log(err)
   console.log(res)
 })

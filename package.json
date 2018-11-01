@@ -2,15 +2,15 @@
   "name": "card-generator",
   "version": "1.0.0",
   "description": "A tool to generate playing cards.",
-  "main": "index.mjs",
+  "main": "./scripts/build.js",
   "author": "Jan Simson <jan.simson@gmx.de>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "node .",
-    "auto-build": "nodemon .",
-    "combine": "node ./combine.js",
-    "serve": "nodemon -e js,css,html,json,svg ./server.js"
+    "build": "node ./scripts/build.js",
+    "auto-build": "node ./scripts/build.js",
+    "combine": "node ./scripts/combine.js",
+    "serve": "nodemon -e js,css,html,json,svg ./scripts/server.js"
   },
   "dependencies": {
     "express": "^4.16.4",

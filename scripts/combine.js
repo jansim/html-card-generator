@@ -1,8 +1,8 @@
 const hummus = require('hummus')
-const path = require('path')
+const config = require('./config')
 
-const SRC_PDF_PATH = path.join(__dirname, '/dist/out.pdf')
-const OUT_PDF_PATH = path.join(__dirname, '/dist/combined.pdf')
+const SRC_PDF_PATH = config.DIST_PDF
+const OUT_PDF_PATH = config.DIST_PDF_COMBINED
 
 var pdfWriter = hummus.createWriter(OUT_PDF_PATH, {version: hummus.ePDFVersion14})
 

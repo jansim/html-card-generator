@@ -2,9 +2,9 @@ const fs = require('fs')
 const handlebars = require('handlebars')
 
 const config = require('./config.js')
-const data = require('./src/data.json')
+const data = require(config.SRC_DATA)
 
-let rawHtml = fs.readFileSync(config.TARGET_FILE, 'utf8')
+let rawHtml = fs.readFileSync(config.SRC_HTML, 'utf8')
 
 handlebars.registerHelper('iconNotice', (icon, options) => {
   if (!icon) { return }
