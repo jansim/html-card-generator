@@ -4,3 +4,28 @@
   background: #ef6c62;
   box-shadow: 0 0 55px #c0392b inset;
 }
+
+.blue-bg {
+  background: #74b9ff;
+  box-shadow: 0 0 55px #0984e3 inset;
+}
+
+.green-bg {
+  background: #2ecc71;
+  box-shadow: 0 0 55px #249a56 inset;
+}
+
+.purple-bg {
+  background: #ba6ed8;
+  box-shadow: 0 0 55px #8e44ad inset;
+}
+
+.grey-bg {
+  background: #bdc3c7;
+  box-shadow: 0 0 55px #7f8c8d inset;
+}
+
+.yellow-bg {
+  background: #f1c40f;
+  box-shadow: 0 0 55px #e67e22 inset;
+}
