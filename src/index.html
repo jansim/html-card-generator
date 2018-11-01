@@ -14,13 +14,10 @@
         </div>
 
         <div class="area-40 text-area top-border red-bg">
-          <div class="type">
-            {{type}}
-          </div>
-          <h1> {{name}} </h1>
-          <p>
-            {{text}}
-          </p>
+          {{#if type}} <div class="type"> {{type}} </div> {{/if}}
+          {{#if name}} <h1> {{name}} </h1> {{/if}}
+          {{#if text}} <p> {{text}} </p> {{/if}}
+
           <div class="foot">
             {{#iconNotice icon}} {{/iconNotice}}
           </div>
