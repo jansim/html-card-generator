@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "build": "node .",
+    "auto-build": "nodemon .",
     "serve": "nodemon ./server.js"
   },
   "dependencies": {
