@@ -6,18 +6,23 @@
 
   <body>
     <div class="page card">
-      <div class="image" style="background-image: url(spiked-dragon-head.svg)">
+      <div class="upper-area" style="box-shadow: 0 0 50px #f12711 inset; background-color: #f5af19;">
+        <div class="image" style="background-image: url(spiked-dragon-head.svg)"> </div>
       </div>
-      <div class="text-area">
+
+      <div class="lower-area text-area card-bg">
+        <div class="type">
+          {{type}}
+        </div>
         <h1> {{name}} </h1>
         <p>
           {{text}}
         </p>
         <div class="indicator bottom left">
-          1
+          {{bottomLeft}}
         </div>
         <div class="indicator bottom right">
-          2
+          {{bottomRight}}
         </div>
         <div class="foot">
           Icon: Delapouite/game-icons.net (CC BY 3.0)

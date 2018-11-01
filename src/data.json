@@ -1,4 +1,7 @@
 {
+  "type": "Type",
   "name": "Max Mustermann",
-  "text": "Lorem ipsum dolor sit amet."
+  "text": "Lorem ipsum dolor sit amet.",
+  "bottomLeft": "L",
+  "bottomRight": "R"
 }
