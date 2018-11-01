@@ -29,3 +29,8 @@
   background: #f1c40f;
   box-shadow: 0 0 55px #e67e22 inset;
 }
+
+.fire-bg {
+  background-color: #f5af19;
+  box-shadow: 0 0 150px #f12711 inset;
+}
