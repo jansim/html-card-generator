@@ -28,7 +28,7 @@ html, body {
   font-size: 7pt;
   font-weight: 500;
 
-  background: rgb(241,241,241);
+  background: #fff;
 
   -webkit-print-color-adjust: exact;
 }
