@@ -3,6 +3,10 @@
     {
       "type": "HTML-2-PDF",
       "icon": "game-icons/faithtoken/card-random.svg",
+      "bg": {
+        "upper": "yellow",
+        "lower": "red"
+      },
       "name": "Card Generator",
       "text": "<i>Easy & fast generation of playing cards!</i>",
       "indicators": {
@@ -15,6 +19,10 @@
     {
       "type": "Card Type",
       "icon": "game-icons/delapouite/astronaut-helmet.svg",
+      "bg": {
+        "upper": "yellow",
+        "lower": "blue"
+      },
       "name": "Lorem ipsum!",
       "text": "Lorem ipsum dolor sit amet.",
       "indicators": {
@@ -26,6 +34,7 @@
     }
   ],
   "backface": {
+    "bg": "fire",
     "icon": "game-icons/delapouite/spiked-dragon-head.svg",
     "iconSize": "cover"
   }
