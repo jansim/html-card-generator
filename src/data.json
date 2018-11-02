@@ -1,8 +1,20 @@
 {
   "cards": [
     {
+      "type": "HTML-2-PDF",
+      "icon": "game-icons/faithtoken/card-random.svg",
+      "name": "Card Generator",
+      "text": "Easy & fast generation of playing cards!",
+      "indicators": {
+        "topLeft": "",
+        "topRight": "",
+        "bottomLeft": "0",
+        "bottomRight": "0"
+      }
+    },
+    {
       "type": "Card Type",
-      "icon": "game-icons/delapouite/all-seeing-eye.svg",
+      "icon": "game-icons/delapouite/astronaut-helmet.svg",
       "name": "Lorem ipsum!",
       "text": "Lorem ipsum dolor sit amet.",
       "indicators": {
