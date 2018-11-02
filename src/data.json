@@ -4,7 +4,7 @@
       "type": "HTML-2-PDF",
       "icon": "game-icons/faithtoken/card-random.svg",
       "name": "Card Generator",
-      "text": "Easy & fast generation of playing cards!",
+      "text": "<i>Easy & fast generation of playing cards!</i>",
       "indicators": {
         "topLeft": "",
         "topRight": "",

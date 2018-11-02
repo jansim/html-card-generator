@@ -14,9 +14,9 @@
         </div>
 
         <div class="area-40 text-area top-border red-bg">
-          {{#if type}} <div class="type"> {{type}} </div> {{/if}}
-          {{#if name}} <h1> {{name}} </h1> {{/if}}
-          {{#if text}} <p> {{text}} </p> {{/if}}
+          {{#if type}} <div class="type"> {{{type}}} </div> {{/if}}
+          {{#if name}} <h1> {{{name}}} </h1> {{/if}}
+          {{#if text}} <p> {{{text}}} </p> {{/if}}
 
           <div class="foot">
             {{#iconNotice icon}} {{/iconNotice}}
@@ -26,22 +26,22 @@
         {{#if indicators}}
           {{#if indicators.topLeft}}
             <div class="indicator top left">
-              {{indicators.topLeft}}
+              {{{indicators.topLeft}}}
             </div>
           {{/if}}
           {{#if indicators.topRight}}
             <div class="indicator top right">
-              {{indicators.topRight}}
+              {{{indicators.topRight}}}
             </div>
           {{/if}}
           {{#if indicators.bottomLeft}}
             <div class="indicator bottom left">
-              {{indicators.bottomLeft}}
+              {{{indicators.bottomLeft}}}
             </div>
           {{/if}}
           {{#if indicators.bottomRight}}
             <div class="indicator bottom right">
-              {{indicators.bottomRight}}
+              {{{indicators.bottomRight}}}
             </div>
           {{/if}}
         {{/if}}
