@@ -20,8 +20,7 @@
       "type": "Card Type",
       "icon": "game-icons/delapouite/astronaut-helmet.svg",
       "bg": {
-        "upper": "yellow",
-        "lower": "blue"
+        "full": "blue"
       },
       "name": "Lorem ipsum!",
       "text": "Lorem ipsum dolor sit amet.",
@@ -34,7 +33,9 @@
     }
   ],
   "backface": {
-    "bg": "fire",
+    "bg": {
+      "full": "fire"
+    },
     "icon": "game-icons/delapouite/spiked-dragon-head.svg",
     "iconSize": "cover"
   }

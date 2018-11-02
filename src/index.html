@@ -8,6 +8,7 @@
   <body>
     {{#each cards}}
       <div class="page card">
+        <div class="bg {{bg.full}}-bg"></div>
         <div class="area-60">
           <div class="bg {{bg.upper}}-bg"></div>
           <div class="bg image" style="background-image: url({{icon}});{{#if ../iconSize}}background-size: {{iconSize}};{{/if}}"> </div>
@@ -49,11 +50,13 @@
 
       {{#if ../backface}}
         <div class="page card">
-          <div class="bg {{../backface/bg}}-bg"></div>
+          <div class="bg {{../backface/bg/full}}-bg"></div>
           <div class="area-50 bottom-border">
+            <div class="bg {{../backface/bg/upper}}-bg"></div>
             <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
           </div>
           <div class="area-50 bottom-border inverted">
+            <div class="bg {{../backface/bg/lower}}-bg"></div>
             <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
           </div>
 
