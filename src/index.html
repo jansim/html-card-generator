@@ -7,65 +7,68 @@
 
   <body>
     {{#each cards}}
-      <div class="page card">
-        <div class="bg {{bg.full}}-bg"></div>
-        <div class="area-60">
-          <div class="bg {{bg.upper}}-bg"></div>
-          <div class="bg image" style="background-image: url({{icon}});{{#if iconSize}}background-size: {{iconSize}};{{/if}}"> </div>
-        </div>
+      {{#times repeat}}
 
-        <div class="area-40 text-area top-border {{bg.lower}}-bg">
-          {{#if type}} <div class="type"> {{{type}}} </div> {{/if}}
-          {{#if name}} <h1> {{{name}}} </h1> {{/if}}
-          {{#if text}} <p> {{{text}}} </p> {{/if}}
-
-          <div class="foot">
-            {{#iconNotice icon}} {{/iconNotice}}
-          </div>
-        </div>
-
-        {{#if indicators}}
-          {{#if indicators.topLeft}}
-            <div class="indicator top left">
-              {{{indicators.topLeft}}}
-            </div>
-          {{/if}}
-          {{#if indicators.topRight}}
-            <div class="indicator top right">
-              {{{indicators.topRight}}}
-            </div>
-          {{/if}}
-          {{#if indicators.bottomLeft}}
-            <div class="indicator bottom left">
-              {{{indicators.bottomLeft}}}
-            </div>
-          {{/if}}
-          {{#if indicators.bottomRight}}
-            <div class="indicator bottom right">
-              {{{indicators.bottomRight}}}
-            </div>
-          {{/if}}
-        {{/if}}
-      </div>
-
-      {{#if ../backface}}
         <div class="page card">
-          <div class="bg {{../backface/bg/full}}-bg"></div>
-          <div class="area-50 bottom-border">
-            <div class="bg {{../backface/bg/upper}}-bg"></div>
-            <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
-          </div>
-          <div class="area-50 bottom-border inverted">
-            <div class="bg {{../backface/bg/lower}}-bg"></div>
-            <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
+          <div class="bg {{bg.full}}-bg"></div>
+          <div class="area-60">
+            <div class="bg {{bg.upper}}-bg"></div>
+            <div class="bg image" style="background-image: url({{icon}});{{#if iconSize}}background-size: {{iconSize}};{{/if}}"> </div>
           </div>
 
-          <div class="foot">
-            {{#iconNotice ../backface.icon}} {{/iconNotice}}
+          <div class="area-40 text-area top-border {{bg.lower}}-bg">
+            {{#if type}} <div class="type"> {{{type}}} </div> {{/if}}
+            {{#if name}} <h1> {{{name}}} </h1> {{/if}}
+            {{#if text}} <p> {{{text}}} </p> {{/if}}
+
+            <div class="foot">
+              {{#iconNotice icon}} {{/iconNotice}}
+            </div>
           </div>
+
+          {{#if indicators}}
+            {{#if indicators.topLeft}}
+              <div class="indicator top left">
+                {{{indicators.topLeft}}}
+              </div>
+            {{/if}}
+            {{#if indicators.topRight}}
+              <div class="indicator top right">
+                {{{indicators.topRight}}}
+              </div>
+            {{/if}}
+            {{#if indicators.bottomLeft}}
+              <div class="indicator bottom left">
+                {{{indicators.bottomLeft}}}
+              </div>
+            {{/if}}
+            {{#if indicators.bottomRight}}
+              <div class="indicator bottom right">
+                {{{indicators.bottomRight}}}
+              </div>
+            {{/if}}
+          {{/if}}
         </div>
-      {{/if}}
 
+        {{#if ../backface}}
+          <div class="page card">
+            <div class="bg {{../backface/bg/full}}-bg"></div>
+            <div class="area-50 bottom-border">
+              <div class="bg {{../backface/bg/upper}}-bg"></div>
+              <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
+            </div>
+            <div class="area-50 bottom-border inverted">
+              <div class="bg {{../backface/bg/lower}}-bg"></div>
+              <div class="bg image" style="background-image: url({{../backface.icon}});{{#if ../backface.iconSize}}background-size: {{../backface.iconSize}};{{/if}}"> </div>
+            </div>
+
+            <div class="foot">
+              {{#iconNotice ../backface.icon}} {{/iconNotice}}
+            </div>
+          </div>
+        {{/if}}
+
+      {{/times}}
     {{/each}}
   </body>
 </html>
