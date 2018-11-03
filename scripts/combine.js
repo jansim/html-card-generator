@@ -7,14 +7,15 @@ const OUT_PDF_PATH = config.DIST_PDF_COMBINED
 // Reorder the cards to properly be able to print fronts and backs?
 const REORDER_FRONTS_BACKS = true
 
+// Dimensions of created pages
+const PAGE_WIDTH = 842
+const PAGE_HEIGHT = 595
+
+// --- Initialization & Functions definitions ---
 var pdfWriter = hummus.createWriter(OUT_PDF_PATH, {version: hummus.ePDFVersion14})
 
 // Convet mm to pts (the internal pdf unit)
 let mm2pt = (mm) => mm * 2.83465
-
-// Dimensions of created pages
-const PAGE_WIDTH = 842
-const PAGE_HEIGHT = 595
 
 // Create a new page and return it
 // used for easier sizing of pages
