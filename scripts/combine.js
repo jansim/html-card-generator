@@ -78,6 +78,7 @@ let y = marginY
 // Iretate overall the cards and place them somewhere on the board
 // .cm() parameters [For reference]
 // (scaleX, trans?, trans?, scaleY, xFromLeft, yFromBot)
+let pageHasContent = false
 formIDs.forEach((ID, index) => {
   if (ID !== undefined) {
     // Place card on page
@@ -86,6 +87,9 @@ formIDs.forEach((ID, index) => {
       .cm(1, 0, 0, 1, x, y)
       .doXObject(page.getResourcesDictionary().addFormXObjectMapping(ID))
       .Q() //end
+
+    // Indicate, that page has content => so it gets saved in the end
+    pageHasContent = true
   }
 
   // Increment X position
@@ -102,8 +106,9 @@ formIDs.forEach((ID, index) => {
       // already in 2nd row => new page
       pdfWriter.writePage(page) // write current page
       page = createNewPage()
+      pageHasContent = false
 
-      // reset x and yy
+      // reset x and y
       x = marginX
       y = marginY
     }
@@ -111,7 +116,9 @@ formIDs.forEach((ID, index) => {
 })
 
 // Finish writing the started page
-pdfWriter.writePage(page)
+if (pageHasContent) {
+  pdfWriter.writePage(page)
+}
 
 // End modifying the pdf and save it
 pdfWriter.end()
