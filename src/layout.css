@@ -132,9 +132,11 @@ html, body {
   position: absolute;
 
   box-sizing: border-box;
-  width: 2em;
-  height: 2em;
+  width: 2.1em;
+  height: 2.1em;
   padding: .4em;
+
+  text-align: center;
 
   font-size: 2em;
 
