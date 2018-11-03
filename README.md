@@ -68,3 +68,5 @@ This file configures the rendering of the HTML to the PDF. Its options are passe
 
 ## Icons
 The icons in this project are made by multiple authors and were obtained from https://game-icons.net. They are licensed under CC BY 3.0. See the license in `src/game-icons/license.txt` for more details.
+
+They are also included as an icon-font made by [seiyria](https://github.com/seiyria/gameicons-font).

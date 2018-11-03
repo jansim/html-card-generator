@@ -13,7 +13,7 @@
         "topLeft": "",
         "topRight": "",
         "bottomLeft": "0",
-        "bottomRight": "0"
+        "bottomRight": "<i class='game-icon game-icon-mouse'></i>"
       }
     },
     {
@@ -27,7 +27,7 @@
       "indicators": {
         "topLeft": "",
         "topRight": "",
-        "bottomLeft": "0",
+        "bottomLeft": "<i class='game-icon game-icon-alien-stare'></i>",
         "bottomRight": "0"
       }
     }
