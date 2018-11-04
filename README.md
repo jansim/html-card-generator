@@ -9,7 +9,7 @@ You should be familiar with using the terminal to use this project and have [nod
 git clone "https://github.com/jansim/html-card-generator.git"
 
 # navigate into the repository
-cd "card-generator"
+cd "html-card-generator"
 
 # install all the needed packages
 npm install

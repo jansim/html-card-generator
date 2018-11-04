@@ -1,5 +1,5 @@
 {
-  "name": "card-generator",
+  "name": "html-card-generator",
   "version": "1.0.0",
   "description": "A tool to generate playing cards.",
   "main": "./scripts/build.js",
